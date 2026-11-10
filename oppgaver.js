@@ -19,7 +19,7 @@
 // Lag let firstname og let lastname med ditt eget navn.
 // Skriv ut begge på samme linje.
 // Forventet: Ola Nordmann  (men ditt navn)
-console.log("\nOppg1:");
+console.log("\nOppgave_1:");
 let firstname = "Thomas Antal";
 let lastname = "Csipa";
 console.log(firstname, lastname);
@@ -29,7 +29,7 @@ console.log(firstname, lastname);
 // Lag let hp = 100. Spilleren blir truffet av en isbjørn og mister 30 hp.
 // Endre hp (uten let foran) og skriv den ut.
 // Forventet: 70
-console.log("\nOppg2:");
+console.log("\nOppgave_2:");
 let hp = 100;
 hp -= 30;
 console.log(hp);
@@ -39,7 +39,7 @@ console.log(hp);
 // Lag const PI = 3.14159. Prøv deretter å skrive PI = 3; og kjør fila.
 // Skriv i oppgavearket hva feilmeldingen betyr, og fjern linja igjen.
 // Forventet: TypeError: Assignment to constant variable.
-console.log("\nOppg3:");
+console.log("\nOppgave_3:");
 const PI = 3.14159;
 // feilen viste til at jeg prøvde å skrive om verdien til en variabel som det ikke var tilatt å endre
 // const betyr jo at den må være konsistant
@@ -48,7 +48,7 @@ const PI = 3.14159;
 // Et spill på Steam koster 200 kr før moms. Lag const MOMS = 0.25 og let pris = 200.
 // Skriv ut prisen med moms.
 // Forventet: Pris med moms: 250 kr
-console.log("\nOppg4:");
+console.log("\nOppgave_4:");
 let pris = 200;
 const MOMS = 0.25;
 console.log(pris + pris * MOMS);
@@ -59,7 +59,7 @@ console.log(pris + pris * MOMS);
 // maks antall spillere på serveren (16), antall liv igjen (3),
 // høyden på Fløya (671), temperaturen i Tromsø nå (-4).
 // Forventet: ingenting i konsollen
-console.log("\nOppg5:");
+console.log("\nOppgave_5:");
 const max_spillere = 16; // det er stilt inn på serveren, det forandrer ikke seg lett
 let mengde_liv = 3;      // liv skal være en resurs som man mister og får
 const Fløya = 671;       // et fjell kan man ikke lett forandre høyden på den
@@ -75,14 +75,14 @@ let temperatur = -4;     // tempratur måler man, avhengig av når og kor man m�
 // Skriv ut typeof hp og typeof firstname.
 // Forventet: number
 //            string
-console.log("\nOppg6:");
+console.log("\nOppgave_6:");
 console.log(typeof(hp), typeof(firstname));
 
 
 // Oppgave 7 (grunnleggende)
 // Bruk backticks og ${} til å skrive ut en setning med firstname og hp.
 // Forventet: Ola har 70 hp
-console.log("\nOppg7:");
+console.log("\nOppgave_7:");
 console.log(`${firstname} har ${hp} hp`);
 
 
@@ -93,7 +93,7 @@ console.log(`${firstname} har ${hp} hp`);
 // Forventet: 10
 //            55
 //            10
-console.log("\nOppg8:");
+console.log("\nOppgave_8:");
 console.log(5 + 5);
 console.log("5" + 5);
 console.log(Number("5") + 5);
@@ -106,7 +106,7 @@ console.log(Number("5") + 5);
 // Tips: Math.floor(17 / 4) runder ned.
 // Forventet: 4 lag
 //            1 til overs
-console.log("\nOppg9:");
+console.log("\nOppgave_9:");
 let elever = 17;
 let elever_per_lag = 4;
 const elver_til_overs = elever % elever_per_lag;
@@ -124,7 +124,7 @@ console.log(elver_til_overs, "til overs");
 // Oppgave 10 (grunnleggende)
 // const temp = -8. Skriv ut "Kuldegrader" hvis temp er under 0.
 // Forventet: Kuldegrader
-console.log("\nOppg10:");
+console.log("\nOppgave_10:");
 const temp = -8;
 if (temp < 0) {
     console.log("Kuldegrader");
@@ -135,7 +135,7 @@ if (temp < 0) {
 // Bruk hp fra oppgave 2. Hvis hp er 0 eller mindre: "Game over".
 // Ellers: "Spillet fortsetter".
 // Forventet: Spillet fortsetter
-console.log("\nOppg11:");
+console.log("\nOppgave_11:");
 if (hp <= 0) {
     console.log("Game over");
 } else if (hp > 0) {
@@ -149,7 +149,7 @@ if (hp <= 0) {
 // før 10: "God morgen", før 18: "God dag", ellers: "God kveld".
 // Forventet: God kveld
 // Test også: endre klokka til 8 og kjør på nytt. Da skal det stå God morgen.
-console.log("\nOppg12:");
+console.log("\nOppgave_12:");
 const klokka = 8;
 if (klokka < 10) {
     console.log("God morgen");
@@ -166,7 +166,7 @@ if (klokka < 10) {
 // const skydekke = 20 og const time = 22. Bruk &&.
 // Forventet: Gode sjanser for nordlys
 // Test også: skydekke = 80 skal gi: Dårlige sjanser i kveld
-console.log("\nOppg13:");
+console.log("\nOppgave_13:");
 const skydekke = 80;
 const time = 22
 if (skydekke < 30 && time >= 18) {
@@ -182,7 +182,7 @@ if (skydekke < 30 && time >= 18) {
 // Billett til Fjellheisen: barn under 12 betaler 50 kr, 67 år og eldre betaler 60 kr,
 // alle andre betaler 100 kr. Lag let alder og skriv ut prisen.
 // Forventet: alder 8 -> 50 kr,  alder 30 -> 100 kr,  alder 70 -> 60 kr
-console.log("\nOppg14:");
+console.log("\nOppgave_14:");
 function fra_alder_til_pris(alder){
     if (alder < 0){
         console.log("Gratis")
@@ -212,7 +212,7 @@ fra_alder_til_pris(70)
 //            3
 //            4
 //            5
-console.log("\nOppg15:");
+console.log("\nOppgave_15:");
 for(let i = 1; i <= 5; i++) {
     console.log(i);
 }
@@ -222,7 +222,7 @@ for(let i = 1; i <= 5; i++) {
 // En rakett skal skytes opp fra Andøya. Tell ned fra 10 til 1 med en for-løkke,
 // og skriv ut "Liftoff!" etter løkka.
 // Forventet: 10, 9, 8 ... 1 (én per linje), så Liftoff!
-console.log("\nOppg16:")
+console.log("\nOppgave_16:")
 for(let i = 10; i > 0; i--) {
     console.log(i);
 }
@@ -233,7 +233,7 @@ console.log("Liftoff!");
 // Regn ut summen av alle tallene fra 1 til 100 med en løkke.
 // Tips: let sum = 0; før løkka.
 // Forventet: 5050
-console.log("\nOppg17:")
+console.log("\nOppgave_17:")
 let sum = 0;
 for (let i = 1; i <= 100; i++) {
     sum += i;
@@ -245,21 +245,27 @@ console.log(sum)
 // Lag let bossHp = 100. Hvert slag tar 15 hp. Bruk en while-løkke og tell
 // hvor mange slag som trengs før bossHp er 0 eller mindre.
 // Forventet: 7 slag
-console.log("\nOppg18:");
+console.log("\nOppgave_18:");
 let boss_hp = 100;
 let slag_skade = 15;
 let antall_slag = 0;
+while (boss_hp > 0) {
+    boss_hp -= slag_skade;
+    antall_slag++;
+}
+/*
 for (let i = boss_hp; i > 0; i -= slag_skade) {
     antall_slag++;
 }
 console.log(antall_slag);
+*/
 
 // Oppgave 19 (avansert)
 // Skriv ut tallene 1 til 15. Er tallet delelig med 3, skriv "Nord" i stedet.
 // Delelig med 5: "Lys". Delelig med både 3 og 5: "Nordlys".
 // Tips: tall % 3 === 0 betyr delelig med 3.
 // Forventet: 1, 2, Nord, 4, Lys, Nord, 7, 8, Nord, Lys, 11, Nord, 13, 14, Nordlys
-console.log("\nOppg19:");
+console.log("\nOppgave_19:");
 for (let i = 1; i <= 15; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("Nordlys");
@@ -287,7 +293,7 @@ for (let i = 1; i <= 15; i++) {
 // Skriv ut den første byen og hvor mange byer det er.
 // Forventet: Tromsø
 //            5
-console.log("\nOppg20:");
+console.log("\nOppgave_20:");
 const byer = ["Tromsø", "Bodø", "Alta", "Harstad", "Narvik"];
 console.log(byer[0]);
 console.log(byer.length);
@@ -299,14 +305,14 @@ console.log(byer.length);
 // Tips: siste element er byer[byer.length - 1]
 // Forventet: Hammerfest
 //            6
-console.log("\nOppg21:");
+console.log("\nOppgave_21:");
 byer.push("Hammerfest");
 console.log(byer[byer.length - 1]);
 
 // Oppgave 22 (middels)
 // Skriv ut alle byene med en for-løkke.
 // Forventet: Tromsø, Bodø, Alta, Harstad, Narvik, Hammerfest (én per linje)
-console.log("\nOppg22:");
+console.log("\nOppgave_22:");
 for (let i = 0; i < byer.length; i++) {
     console.log(byer[i]);
 }
@@ -316,9 +322,15 @@ for (let i = 0; i < byer.length; i++) {
 // const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
 // Tell hvor mange dager det var kaldere enn -5. Bruk for og if.
 // Forventet: 3
-console.log("\nOppg23:");
+console.log("\nOppgave_23:");
 const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
-for (let i = 0, counter = 0; ;){}
+let cold_counter = 0
+for (let i = 0; i < temperaturer.length ; i++){
+    if (temperaturer[i] < -5) {
+        cold_counter += 1;
+    }
+}
+console.log(cold_counter)
 
 // Oppgave 24 (avansert)
 // const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"];
@@ -326,11 +338,29 @@ for (let i = 0, counter = 0; ;){}
 // b) Lag en ny array uten "drikk" ved å bruke en løkke og push.
 // Forventet: 3
 //            [ 'sverd', 'skjold', 'fiskestang' ]
-console.log("\nOppg24:");
+console.log("\nOppgave_24:");
+const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"];
+let drikk_counter = 0;
+for (let i = 0; i < inventory.length ; i++){
+    if (inventory[i] === "drikk") {
+        drikk_counter += 1;
+    }
+}
+console.log(drikk_counter);
+let inventory_uten_drikk = []
+for (let i = 0, item = 0; i < inventory.length ; i++){
+    item = inventory[i];
+    if (item !== "drikk") {
+        inventory_uten_drikk.push(item);
+    }
+}
+console.log(inventory_uten_drikk);
 
 
 // Oppgave 25 (avansert)
 // inventory er const, men push virker likevel. Hvorfor?
 // Skriv svaret i oppgavearket.
 // Forventet: ingenting i konsollen
-console.log("\nOppg25:");
+console.log("\nOppgave_25:");
+// den er en const siden ingen av verdiene inne den kan bli forandret,
+// const er bare for de inviduele verdiene inne arrayen, arrayen i seg selv kan bli forandret som man vill
